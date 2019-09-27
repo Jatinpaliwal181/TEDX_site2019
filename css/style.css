@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800&display=swap');
 body {
     color: #3f2645;
     font-family: Roboto Slab, serif;
@@ -62,3 +63,21 @@ body {
 #pixiCanvas {
     opacity: 0
 }
+
+
+/*.title {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 250px;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: "Montserrat";
+    text-align: center;
+    width: 100%;
+}*/
