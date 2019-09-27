@@ -1,0 +1,65 @@
+body {
+    color: #3f2645;
+    font-family: Roboto Slab, serif;
+    -webkit-font-feature-settings: "kern", "liga", "pnum";
+    font-feature-settings: "kern", "liga", "pnum";
+    font-size: 16px;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.threenado {
+    background-color: #2A2926;
+    color: white;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.no-webgl .threenado {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat
+}
+
+.threenado canvas {
+    z-index: 1;
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+.no-webgl .threenado canvas {
+    display: none
+}
+
+.threenado__overlay {
+    mix-blend-mode: difference;
+    z-index: 2;
+    background-image: radial-gradient(circle at 68% 42%, rgba(42, 41, 38, 0) 10%, rgba42, 41, 38, .7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+.no-webgl .threenado__overlay {
+    display: none
+}
+
+#pixiCanvas {
+    opacity: 0
+}
